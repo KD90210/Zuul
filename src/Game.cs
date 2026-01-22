@@ -1,25 +1,18 @@
 using System;
 
-	class Game
-	{
+class Game
+{
 	// Private fields
-	private void CreateRooms()
-	{
-	// ...
-	player.CurrentRoom = outside;
-	}
-
-	// Constructor
-	class Game
-	{
 	private Parser parser;
 	private Player player;
-	public Game ()
+	private Room currentRoom;
+
+	// Constructor
+	public Game()
 	{
-	parser = new Parser();
-	player = new Player();
-	CreateRooms();
-	}
+		parser = new Parser();
+		player = new Player();
+		CreateRooms();
 	}
 
 	// Initialise the Rooms (and the Items)
